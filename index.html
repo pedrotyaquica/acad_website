@@ -322,6 +322,8 @@ main.view,footer{zoom:var(--fz)}
 .qb-bar{height:8px;border-radius:999px;background:var(--line);overflow:hidden}
 .qb-bar i{display:block;height:100%;border-radius:999px}
 .qb-a{background:#2f9e7a}.qb-b{background:#d9a441}.qb-c{background:#c96a6a}
+.list.noyr li{grid-template-columns:1fr}
+.list.noyr .s{grid-column:1}
 footer{border-top:1px solid var(--line);padding-block:20px;color:var(--muted);font-size:13px}
 footer .wrap{display:flex;justify-content:center}
 @media (prefers-reduced-motion:no-preference){.view{animation:in .25s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
@@ -482,9 +484,9 @@ footer .wrap{display:flex;justify-content:center}
       </div>
       <div class="box">
         <h3>Revisor</h3>
-        <ul class="list">
-          <li><span class="y">2026</span><b>Discover Applied Sciences</b><span class="s">Springer Nature</span></li>
-          <li><span class="y">2024</span><b>Ocean &amp; Coastal Management</b><span class="s">Elsevier</span></li>
+        <ul class="list noyr">
+          <li><b>Discover Applied Sciences</b><span class="s">Springer Nature</span></li>
+          <li><b>Ocean &amp; Coastal Management</b><span class="s">Elsevier</span></li>
         </ul>
       </div>
       <p class="spec-note"><span class="spec-mini" aria-hidden="true"></span>A faixa no topo da página é o espectro solar no topo da atmosfera: <b>8,7 %</b> ultravioleta, <b>40 %</b> visível, <b>51 %</b> infravermelho.</p>
