@@ -420,7 +420,7 @@ footer .wrap{display:flex;justify-content:center}
         <h2 style="border:0;padding:0;margin:4px 0 10px;font-size:28px;text-transform:uppercase;letter-spacing:.04em;color:var(--sun)">Produção</h2>
         <div style="overflow-x:auto">
         <table class="pubs">
-          <thead><tr><th>Título</th><th class="ql">Qualis</th><th class="jcr">JCR</th><th class="yr">Ano</th></tr></thead>
+          <thead><tr><th>Título</th><th class="jcr">JCR</th><th class="ql">Qualis</th><th class="yr">Ano</th></tr></thead>
           <tbody id="pubs"></tbody>
         </table>
         </div>
@@ -772,7 +772,7 @@ const PUBS = [
 const tb = document.getElementById('pubs');
 tb.innerHTML = PUBS.map(p => `<tr><td>
   <a class="pt" href="${p.d?'https://doi.org/'+p.d:'https://scholar.google.com/scholar?q='+encodeURIComponent('"'+p.t+'"')}" target="_blank" rel="noopener">${p.t.replace('CO2','CO₂')}</a>${p.q?`<span class="badge${p.n?' new':''}">${p.q}</span>`:''}
-  <div class="pa">${p.a}</div><div class="pv">${p.v}${p.d?` · <a class="doi" href="https://doi.org/${p.d}" target="_blank" rel="noopener">doi:${p.d}</a>`:''}</div></td><td class="ql">${p.ql||'<span class="nojcr">—</span>'}</td><td class="jcr">${p.j?p.j.toFixed(1).replace('.',',')+(p.jf||''):'<span class="nojcr">—</span>'}</td><td class="yr">${p.y}</td></tr>`).join('');
+  <div class="pa">${p.a}</div><div class="pv">${p.v}${p.d?` · <a class="doi" href="https://doi.org/${p.d}" target="_blank" rel="noopener">doi:${p.d}</a>`:''}</div></td><td class="jcr">${p.j?p.j.toFixed(1).replace('.',',')+(p.jf||''):'<span class="nojcr">—</span>'}</td><td class="ql">${p.ql||'<span class="nojcr">—</span>'}</td><td class="yr">${p.y}</td></tr>`).join('');
 
 
 
