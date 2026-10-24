@@ -86,11 +86,11 @@ h2{font-size:21px;font-weight:600;padding-bottom:8px;border-bottom:1px solid var
 .chips{display:flex;flex-wrap:wrap;gap:6px 8px;margin-top:14px}
 .chip{font-size:13px;color:var(--ocean);background:var(--ocean-soft);padding:3px 10px;border-radius:999px;text-decoration:none;border:1px solid transparent;transition:border-color .15s}
 a.chip:hover{border-color:var(--ocean)}
-.ids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:0}
+.ids{display:flex;flex-wrap:wrap;gap:10px;margin-top:0}
 section.about{margin-top:28px}
 .ids .idbtn{justify-content:flex-start;min-width:0}
 .ids .idbtn code{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-@media (max-width:620px){.ids{grid-template-columns:1fr}}
+@media (max-width:620px){.ids{flex-wrap:wrap}}
 .idbtn{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid var(--line);border-radius:6px;background:var(--surface);text-decoration:none;color:var(--ink);font-size:14px;font-weight:500}
 .idbtn:hover{border-color:var(--ocean)}
 .idbtn .tag{font-family:var(--f-mono);font-size:11px;font-weight:500;padding:2px 6px;border-radius:3px;background:var(--ocean);color:var(--surface)}
@@ -373,8 +373,8 @@ footer .wrap{display:flex;justify-content:center}
             </div>
             <div class="head-links">
             <div class="ids">
-              <a class="idbtn" href="https://orcid.org/0000-0002-7014-542X" target="_blank" rel="noopener"><span class="tag orcid">iD</span>ORCID <code>0000-0002-7014-542X</code></a>
-              <a class="idbtn" href="http://lattes.cnpq.br/4388204367134405" target="_blank" rel="noopener"><span class="tag">CV</span>Currículo Lattes <code>4388204367134405</code></a>
+              <a class="idbtn" href="https://orcid.org/0000-0002-7014-542X" target="_blank" rel="noopener"><span class="tag orcid">iD</span>ORCID</a>
+              <a class="idbtn" href="http://lattes.cnpq.br/4388204367134405" target="_blank" rel="noopener"><span class="tag">CV</span>Currículo Lattes</a>
             </div>
             <div class="chips" aria-label="Áreas de pesquisa">
               <a class="chip" href="https://en.wikipedia.org/wiki/Solar_energy" target="_blank" rel="noopener" title="Wikipedia (em inglês)">Energia solar</a>
