@@ -9,7 +9,7 @@ Site acadêmico de **Pedro Tyaquiçã da Silva Santos**, pesquisador do Departam
 - **Perfil:** apresentação, áreas de pesquisa, links para o ORCID e o Currículo Lattes, citações e índice h, produção científica com DOI e fator de impacto (JCR), formação acadêmica, pós-doutorados e instituições parceiras.
 - **Disciplinas:** componentes curriculares do curso de Engenharia de Energias Renováveis da UFPE (Campus do Sertão), com ementa, carga horária, pré-requisitos, conteúdo programático e bibliografia, além do material de aula de cada tema.
 - **Projetos:** os 25 projetos de pesquisa e PD&I, em andamento, com o setor elétrico e concluídos.
-- **Trabalhos técnicos:** infraestrutura de HPC, instrumentação, campanhas oceanográficas, relatórios técnicos, avaliação científica e organização de eventos.
+- **Atividades:** infraestrutura de HPC, instrumentação, campanhas oceanográficas, relatórios técnicos, avaliação científica e organização de eventos.
 
 ## Recursos
 
