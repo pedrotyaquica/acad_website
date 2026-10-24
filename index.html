@@ -164,7 +164,7 @@ a.org:hover span{color:var(--ocean)}
 
 /* disciplinas */
 .intro{max-width:70ch;color:var(--muted);margin:-4px 0 18px}
-.courses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+.courses{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;align-items:start}
 @media (max-width:760px){.courses{grid-template-columns:1fr}}
 .course{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:18px 20px;display:flex;flex-direction:column;gap:10px;min-width:0}
 .ctop{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
@@ -295,7 +295,6 @@ main.view,footer{zoom:var(--fz)}
 .pgroup+.pgroup{margin-top:28px}
 .ptitle{font-family:var(--f-body);font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sun);display:flex;align-items:center;gap:12px;margin:0}
 .ptitle::after{content:"";flex:1;height:1px;background:var(--line)}
-.courses>.course:last-child:nth-child(odd){grid-column:1 / -1}
 footer{border-top:1px solid var(--line);padding-block:20px;color:var(--muted);font-size:13px}
 footer .wrap{display:flex;justify-content:center}
 @media (prefers-reduced-motion:no-preference){.view{animation:in .25s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
@@ -554,15 +553,6 @@ footer .wrap{display:flex;justify-content:center}
     <div class="pgroup">
       <h3 class="ptitle">Eletivas</h3>
       <div class="courses">
-      <article class="course" id="er084">
-        <div class="ctop"><span class="code">ER084</span><span class="dpill pill-el">Eletiva</span></div>
-        <h3>Radiação Solar</h3>
-        <div class="dmeta"><span>Sem período fixo</span><span>60 h · 4 créditos</span><span>Teórica 60 h · Prática 0 h</span></div>
-        <div class="dpre"><span class="lbl">Pré-requisitos</span> ER010 Introdução à Energia Solar</div>
-        <div><div class="lbl">Ementa</div><p>Estudo da radiação solar em seus múltiplos espectros parciais: energético, PAR, Iluminância e UV.</p></div>
-        <details><summary>Conteúdo programático</summary><ol class="dcp"><li>Radiação solar para fins energéticos, iluminância, radiação solar PAR e UV.</li><li>Medidas dos diversos componentes espectrais da radiação solar (broadband).</li><li>Métodos estatísticos para estimação dos diversos componentes espectrais da radiação solar.</li><li>Modelamento espectral da radiação solar na superfície da Terra.</li></ol></details>
-        <details><summary>Bibliografia</summary><div class="lbl">Bibliografia básica</div><ol class="refs"><li>FRAIDENRAICH, N.; LYRA, F. Energia Solar: Fundamentos e Tecnologias de Conversão Heliotermoelétrica e Fotovoltaica. Recife: Ed. UFPE, 1995.</li><li>GALLEGOS, H. G. Notas sobre radiación solar. Universidad Nacional de Luján, 2002.</li><li>TIBA, C.; FRAIDENRAICH, N.; LYRA, F. Atlas Solarimétrico do Brasil: Dados Terrestres. Recife: Ed. UFPE, 2000.</li></ol></details>
-      </article>
       <article class="course" id="er083">
         <div class="ctop"><span class="code">ER083</span><span class="dpill pill-el">Eletiva</span></div>
         <h3>Tópicos Especiais em Energia Solar</h3>
@@ -571,6 +561,15 @@ footer .wrap{display:flex;justify-content:center}
         <div><div class="lbl">Ementa</div><p>Temas de interesse como células de alta eficiência, usinas solar termoelétrica, produção de hidrogênio e outras aplicações avançadas de energia solar.</p></div>
         <details><summary>Conteúdo programático</summary><ol class="dcp"><li>A ser definido a cada semestre em função da demanda do corpo discente e das diretrizes estratégicas da coordenação do curso.</li></ol></details>
         <details><summary>Bibliografia</summary><div class="lbl">Bibliografia básica</div><ol class="refs"><li>GREEN, M. Solar Cells: Operating Principles, Technology, and System Applications. Prentice Hall, 1981.</li><li>TIBA, C.; FRAIDENRAICH, N.; BARBOSA, E. Instalação de sistemas fotovoltaicos para residências rurais e bombeamento de água. Recife: Ed. UFPE, 1998.</li><li>RABL, A. Active Solar Collectors and their Application. New York: Oxford University Press, 1985.</li><li>PINHO, J.; GALDINO, M. Manual de Engenharia para Sistemas Fotovoltaicos. Rio de Janeiro: CEPEL-CRESESB, 2014.</li></ol><div class="lbl">Bibliografia complementar</div><ol class="refs"><li>Revista Brasileira de Energia Solar.</li><li>Revista Avances en Energías Renovables y Medio Ambiente (AVERMA).</li><li>Solar Energy.</li><li>Renewable Energy.</li><li>Progress in Photovoltaics.</li><li>Applied Energy.</li><li>Solar Energy Materials and Solar Cells.</li></ol></details>
+      </article>
+      <article class="course" id="er084">
+        <div class="ctop"><span class="code">ER084</span><span class="dpill pill-el">Eletiva</span></div>
+        <h3>Radiação Solar</h3>
+        <div class="dmeta"><span>Sem período fixo</span><span>60 h · 4 créditos</span><span>Teórica 60 h · Prática 0 h</span></div>
+        <div class="dpre"><span class="lbl">Pré-requisitos</span> ER010 Introdução à Energia Solar</div>
+        <div><div class="lbl">Ementa</div><p>Estudo da radiação solar em seus múltiplos espectros parciais: energético, PAR, Iluminância e UV.</p></div>
+        <details><summary>Conteúdo programático</summary><ol class="dcp"><li>Radiação solar para fins energéticos, iluminância, radiação solar PAR e UV.</li><li>Medidas dos diversos componentes espectrais da radiação solar (broadband).</li><li>Métodos estatísticos para estimação dos diversos componentes espectrais da radiação solar.</li><li>Modelamento espectral da radiação solar na superfície da Terra.</li></ol></details>
+        <details><summary>Bibliografia</summary><div class="lbl">Bibliografia básica</div><ol class="refs"><li>FRAIDENRAICH, N.; LYRA, F. Energia Solar: Fundamentos e Tecnologias de Conversão Heliotermoelétrica e Fotovoltaica. Recife: Ed. UFPE, 1995.</li><li>GALLEGOS, H. G. Notas sobre radiación solar. Universidad Nacional de Luján, 2002.</li><li>TIBA, C.; FRAIDENRAICH, N.; LYRA, F. Atlas Solarimétrico do Brasil: Dados Terrestres. Recife: Ed. UFPE, 2000.</li></ol></details>
       </article>
       </div>
     </div>
