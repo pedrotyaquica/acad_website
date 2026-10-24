@@ -62,9 +62,9 @@ h2{font-size:21px;font-weight:600;padding-bottom:8px;border-bottom:1px solid var
 .eyebrow{font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:600}
 
 /* cabeçalho do perfil */
-.head{display:grid;grid-template-columns:112px minmax(0,1fr);column-gap:22px;row-gap:22px;align-items:start}
+.head{display:grid;grid-template-columns:148px minmax(0,1fr);column-gap:22px;row-gap:22px;align-items:start}
 .avatar-col,.head-txt{display:contents}
-.avatar{grid-column:1;grid-row:1}
+.avatar{grid-column:1;grid-row:1;justify-self:center}
 .head-name{grid-column:2;grid-row:1;min-width:0;align-self:center}
 .cites-col{grid-column:1;grid-row:2;display:grid;gap:8px;justify-items:center;align-content:start}
 .head-links{grid-column:2;grid-row:2;min-width:0}
@@ -74,7 +74,7 @@ h2{font-size:21px;font-weight:600;padding-bottom:8px;border-bottom:1px solid var
 .avatar img{width:100%;height:100%;object-fit:cover;display:block}
 
 .cites{margin:0;display:grid;grid-template-columns:1fr 1fr;width:100%;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
-.cites div{display:grid;justify-items:center;padding:6px 2px}
+.cites div{display:grid;justify-items:center;gap:2px;padding:9px 8px 8px}
 .cites div+div{border-left:1px solid var(--line)}
 .cites dt{font-size:11px;letter-spacing:.03em;white-space:nowrap;text-transform:uppercase;color:var(--muted);font-weight:600}
 .cites dd{margin:0;font-family:var(--f-mono);font-size:23px;font-weight:600;font-variant-numeric:tabular-nums;color:var(--sun);line-height:1.25}
