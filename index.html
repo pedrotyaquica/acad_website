@@ -306,6 +306,7 @@ main.view,footer{zoom:var(--fz)}
 .dl-msg{display:block;font-size:12.5px;color:var(--muted)}
 .dl-msg:empty{display:none}
 @media (max-width:560px){.dl-list li{grid-template-columns:minmax(0,1fr) auto}.dl-n{grid-column:1 / -1}}
+.grid.grid-full{grid-template-columns:minmax(0,1fr)}
 footer{border-top:1px solid var(--line);padding-block:20px;color:var(--muted);font-size:13px}
 footer .wrap{display:flex;justify-content:center}
 @media (prefers-reduced-motion:no-preference){.view{animation:in .25s ease-out}@keyframes in{from{opacity:.4;transform:translateY(4px)}to{opacity:1;transform:none}}}
@@ -668,25 +669,12 @@ footer .wrap{display:flex;justify-content:center}
     </div>
   </section>
   <section>
-  <div class="grid">
+  <div class="grid grid-full">
     <div style="min-width:0">
       <section><h2>Em andamento</h2><ul class="plist" id="p-and"></ul></section>
       <section><h2>PD&amp;I com o setor elétrico · CER-UFPE</h2><ul class="plist" id="p-pdi"></ul></section>
       <section><h2>Concluídos</h2><ul class="plist" id="p-conc"></ul></section>
     </div>
-    <aside class="sticky-aside">
-      <div class="box">
-        <h3>Projetos recentes</h3>
-        <ul class="list">
-          <li><span class="y">2025</span><b>PEM · Energias renováveis</b><span class="s">Planejamento Espacial Marinho, FUNPEC</span></li>
-          <li><span class="y">2025</span><b>PD&amp;I · Aprimoramento da Produção Eólica</b><span class="s">Consultoria, setor elétrico</span></li>
-          <li><span class="y">2024</span><b>CARPRIMA</b><span class="s">Sistema carbonato no Arquipélago São Pedro e São Paulo, CNPq</span></li>
-          <li><span class="y">2023</span><b>SIMOPEC</b><span class="s">Modelagem acoplada oceano-atmosfera de extremos no Nordeste, CNPq</span></li>
-          <li><span class="y">2022</span><b>Teleconexões Pacífico–Atlântico</b><span class="s">Variabilidade climática da América do Sul, CNPq</span></li>
-          <li><span class="y">2017–</span><b>Rede CLIMA</b><span class="s">Rede Brasileira de Pesquisas sobre Mudanças Climáticas Globais</span></li>
-        </ul>
-      </div>
-    </aside>
   </div>
   </section>
 </main>
