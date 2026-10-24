@@ -45,6 +45,8 @@ nav a,.theme-btn{box-shadow:0 1px 3px rgba(0,0,0,.25)}
 nav{display:flex;flex-wrap:wrap;justify-content:center;gap:8px 10px;padding-block:10px}
 nav a{height:34px;display:inline-flex;align-items:center;padding:0 16px;line-height:1;border-radius:999px;border:1px solid transparent;background:var(--sun-soft);color:var(--sun);text-decoration:none;font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;transition:background .15s,border-color .15s,color .15s}
 nav a:hover{border-color:var(--sun)}
+nav a:not([aria-current="page"]){background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.38);color:#2b1d0e;box-shadow:none}
+nav a:not([aria-current="page"]):hover{background:rgba(255,255,255,.32);border-color:rgba(255,255,255,.6)}
 nav a[aria-current="page"]{background:var(--sun);border-color:var(--sun);color:var(--sun-soft)}
 nav a[aria-current="page"]:hover{color:var(--sun-soft)}
 .spectrum{display:flex;height:8px;background:linear-gradient(90deg,var(--uv) 0%,var(--uv) 4%,var(--vis) 29%,var(--ir) 74%,var(--ir) 100%)}
