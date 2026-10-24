@@ -335,7 +335,7 @@ footer .wrap{display:flex;justify-content:center}
 <body>
 
 <script>
-(function(){var t='dark';try{var v=localStorage.getItem('tema');if(v==='light'||v==='dark')t=v;}catch(e){}document.documentElement.setAttribute('data-theme',t);try{if(localStorage.getItem('contraste')==='high')document.documentElement.setAttribute('data-contrast','high');var z=parseFloat(localStorage.getItem('zoom'));if(z>=0.85&&z<=1.5)document.documentElement.style.setProperty('--fz',z);}catch(e){}})();
+(function(){var t='dark';try{localStorage.removeItem('tema');var v=sessionStorage.getItem('tema');if(v==='light'||v==='dark')t=v;}catch(e){}document.documentElement.setAttribute('data-theme',t);try{if(localStorage.getItem('contraste')==='high')document.documentElement.setAttribute('data-contrast','high');var z=parseFloat(localStorage.getItem('zoom'));if(z>=0.85&&z<=1.5)document.documentElement.style.setProperty('--fz',z);}catch(e){}})();
 </script>
 
 <header class="bar">
@@ -813,7 +813,7 @@ document.getElementById('p-conc').innerHTML = PROJ.filter(p=>p.s==='c').sort((a,
   const btn=document.getElementById('theme-btn'), lbl=btn.querySelector('.lbl');
   const cur=()=>document.documentElement.getAttribute('data-theme')||'dark';
   const paint=()=>{const t = cur()==='dark' ? 'Mudar para o tema claro' : 'Mudar para o tema escuro'; lbl.textContent=t; btn.title=t; btn.setAttribute('aria-label',t);};
-  btn.addEventListener('click',()=>{const n=cur()==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{localStorage.setItem('tema',n);}catch(e){}paint();});
+  btn.addEventListener('click',()=>{const n=cur()==='dark'?'light':'dark';document.documentElement.setAttribute('data-theme',n);try{sessionStorage.setItem('tema',n);}catch(e){}paint();});
   paint();
 })();
 (function(){
