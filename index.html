@@ -268,6 +268,9 @@ main.view,footer{zoom:var(--fz)}
 :root[data-contrast="high"] nav a,:root[data-contrast="high"] .a11y-btn,:root[data-contrast="high"] .theme-btn{border-color:#ffe14d}
 :root[data-contrast="high"] .chip,:root[data-contrast="high"] .badge,:root[data-contrast="high"] .term,:root[data-contrast="high"] .pill{border:1px solid currentColor}
 @media (max-width:760px){.tools{position:static;transform:none;margin-top:4px}.a11y-panel{right:auto;left:50%;transform:translateX(-50%)}}
+.a11y-btn,.theme-btn{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.38);color:#2b1d0e;box-shadow:none;transition:background .15s,border-color .15s,color .15s}
+.a11y-btn:hover,.theme-btn:hover{background:rgba(255,255,255,.32);border-color:rgba(255,255,255,.6)}
+.a11y-btn[aria-expanded="true"]{background:rgba(255,255,255,.32);border-color:rgba(255,255,255,.6)}
 .langbar{display:flex;justify-content:flex-end;padding-block:14px 0}
 .langs{display:flex;gap:6px}
 .lang{padding:0;border:2px solid transparent;border-radius:4px;background:none;cursor:pointer;line-height:0;opacity:.55;transition:opacity .15s,border-color .15s}
