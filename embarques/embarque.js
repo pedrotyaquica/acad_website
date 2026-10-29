@@ -11,8 +11,8 @@
   fotos.forEach(function(f){
     var li=document.createElement('li'), b=document.createElement('button');
     b.type='button';
-    b.innerHTML='<img loading="lazy" alt="'+(f.alt||f.legenda||'')+'" src="'+P+f.mini+'"><span class="cap">'+(f.legenda||'')+'</span>';
-    b.addEventListener('click',function(){img.src=P+f.grande;img.alt=f.alt||f.legenda||'';cap.textContent=f.legenda||'';dlg.showModal();});
+    b.innerHTML='<img loading="lazy" alt="'+(f.alt||f.legenda||'')+'" src="'+P+f.mini+'">'+(f.legenda?'<span class="cap">'+f.legenda+'</span>':'');
+    b.addEventListener('click',function(){img.src=P+f.grande;img.alt=f.alt||f.legenda||'';cap.textContent=f.legenda||'';cap.hidden=!f.legenda;dlg.showModal();});
     li.appendChild(b);grid.appendChild(li);
   });
   dlg.querySelector('.fechar').addEventListener('click',function(){dlg.close();});
