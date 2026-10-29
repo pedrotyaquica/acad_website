@@ -33,3 +33,10 @@ dialog p{margin:0;padding:10px 14px;font-size:15px}
 dialog .fechar{position:absolute;top:8px;right:8px;width:36px;height:36px;border-radius:50%;border:0;background:rgba(0,0,0,.6);color:#fff;font-size:20px;cursor:pointer}
 
 dialog p[hidden]{display:none}
+dialog{position:fixed}
+dialog .nav{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:64px;border:0;border-radius:8px;background:rgba(0,0,0,.55);color:#fff;font-size:22px;cursor:pointer}
+dialog .nav:hover,dialog .fechar:hover{background:rgba(0,0,0,.8)}
+dialog .prev{left:8px}
+dialog .next{right:8px}
+dialog .contador{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);padding:2px 12px;border-radius:999px;background:rgba(0,0,0,.6);color:#fff;font-size:14px;font-variant-numeric:tabular-nums}
+@media (max-width:600px){dialog .nav{width:36px;height:52px}}
