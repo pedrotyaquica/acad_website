@@ -5,6 +5,14 @@
   function paint(){var d=r.getAttribute('data-theme')==='dark',s=d?'Mudar para o tema claro':'Mudar para o tema escuro';btn.title=s;btn.setAttribute('aria-label',s);}
   btn.addEventListener('click',function(){var n=r.getAttribute('data-theme')==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{sessionStorage.setItem('tema',n);}catch(e){}paint();});
   paint();
+  (function(){
+    var up=document.createElement('button');up.type='button';up.className='topo';up.setAttribute('aria-label','Voltar ao topo');
+    up.innerHTML='<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 13V3M3 7.5 8 3l5 4.5"/></svg>Voltar ao topo';
+    document.body.appendChild(up);
+    function vis(){up.classList.toggle('on',window.scrollY>400);}
+    window.addEventListener('scroll',vis,{passive:true});vis();
+    up.addEventListener('click',function(){var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;window.scrollTo({top:0,behavior:rm?'auto':'smooth'});});
+  })();
   var P=window.PASTA||'', fotos=window.FOTOS||[], grid=document.getElementById('grid');
   if(!fotos.length){grid.outerHTML='<p class="vazio">As fotos deste embarque serão publicadas em breve.</p>';return;}
   var dlg=document.getElementById('lightbox'), img=dlg.querySelector('img'), cap=dlg.querySelector('p'), cur=0;

@@ -40,3 +40,8 @@ dialog .prev{left:8px}
 dialog .next{right:8px}
 dialog .contador{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);padding:2px 12px;border-radius:999px;background:rgba(0,0,0,.6);color:#fff;font-size:14px;font-variant-numeric:tabular-nums}
 @media (max-width:600px){dialog .nav{width:36px;height:52px}}
+.topo{position:fixed;right:16px;bottom:16px;z-index:5;display:inline-flex;align-items:center;gap:6px;font:600 13px/1 var(--f);color:var(--ink);padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:color-mix(in srgb,var(--surface) 55%,transparent);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);cursor:pointer;opacity:0;visibility:hidden;transition:opacity .2s,visibility .2s,background .15s}
+.topo.on{opacity:1;visibility:visible}
+.topo:hover,.topo:focus-visible{background:color-mix(in srgb,var(--surface) 85%,transparent)}
+.topo svg{width:14px;height:14px;flex:none}
+@media (prefers-reduced-motion:reduce){.topo{transition:none}}
