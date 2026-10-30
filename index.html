@@ -137,6 +137,9 @@ aside{display:grid;gap:20px}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
 aside .box{background:color-mix(in srgb,var(--surface) 55%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 :root[data-contrast="high"] aside .box{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none}
+main .course,main .plan,main .pstats div,main .plan-nav button{background:color-mix(in srgb,var(--surface) 55%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+main .plan-nav button[aria-pressed="true"],main .plan-nav button[aria-selected="true"],main .plan-nav button.on,main .plan-nav button.active{background:color-mix(in srgb,var(--surface) 80%,transparent)}
+:root[data-contrast="high"] main .course,:root[data-contrast="high"] main .plan,:root[data-contrast="high"] main .pstats div,:root[data-contrast="high"] main .plan-nav button{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none}
 .box h3{font-family:var(--f-body);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:10px}
 .nums{width:100%;border-collapse:collapse;font-size:15px}
 .nums td{padding:6px 0;border-top:1px solid var(--line)}
