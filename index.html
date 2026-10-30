@@ -135,6 +135,8 @@ section.about{margin-top:28px}
 /* lateral */
 aside{display:grid;gap:20px}
 .box{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+aside .box{background:color-mix(in srgb,var(--surface) 55%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+:root[data-contrast="high"] aside .box{background:var(--surface);-webkit-backdrop-filter:none;backdrop-filter:none}
 .box h3{font-family:var(--f-body);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:10px}
 .nums{width:100%;border-collapse:collapse;font-size:15px}
 .nums td{padding:6px 0;border-top:1px solid var(--line)}
