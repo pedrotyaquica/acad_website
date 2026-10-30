@@ -30,6 +30,10 @@
 
 *{box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+/* plano de fundo: foto do anemômetro ao entardecer (Thalassa), sob véu da cor de fundo para manter a leitura */
+html::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(color-mix(in srgb,var(--bg) 58%,transparent),color-mix(in srgb,var(--bg) 72%,transparent)),url(imagens/pirata-fr29/10-vento.jpg) center/cover no-repeat}
+:root[data-contrast="high"]::before{display:none}
+@media print{html::before{display:none}}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
 a{color:var(--ocean);text-decoration-thickness:1px;text-underline-offset:2px}
 a:focus-visible,button:focus-visible{outline:2px solid var(--sun);outline-offset:2px;border-radius:3px}
