@@ -29,7 +29,7 @@
   --uv:#9d86d6; --vis:#e3b545; --ir:#d9705a; color-scheme:dark}
 
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.5}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.2}
 /* plano de fundo: foto do anemômetro ao entardecer (Thalassa), sob véu da cor de fundo para manter a leitura */
 html::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(color-mix(in srgb,var(--bg) 58%,transparent),color-mix(in srgb,var(--bg) 72%,transparent)),url(imagens/pirata-fr29/10-vento.jpg) center/cover no-repeat}
 :root[data-contrast="high"]::before{display:none}
@@ -106,7 +106,7 @@ section.about{margin-top:28px}
 @media (max-width:520px){.head{grid-template-columns:1fr;row-gap:16px}.avatar,.head-name,.cites-col,.head-links{grid-column:1;grid-row:auto}.avatar{order:1}.head-name{order:2}.cites-col{order:3}.head-links{order:4}.cites-col{justify-items:start;width:180px}.avatar{flex-basis:104px;width:104px;height:104px;font-size:30px;justify-self:start}.head h1{font-size:26.5px}}
 
 .about{max-width:none}
-.about p{margin:0 0 12px;font-size:18px;line-height:1.5;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+.about p{margin:0 0 12px;font-size:16px;line-height:1.2;text-align:justify;hyphens:auto;-webkit-hyphens:auto}
 
 /* publicações */
 .pubs{width:100%;border-collapse:collapse}

@@ -2,7 +2,7 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e161c;--surface:#152029;--ink:#e4ebef;--muted:#97a7b2;--line:#26353f;--ocean:#7fb8d6;--ocean-soft:#1b3242;--sun:#f0a640;--sun-soft:#3a2a12;--uv:#9d86d6;--vis:#e3b545;--ir:#d9705a;color-scheme:dark}}
 :root[data-theme="dark"]{--bg:#0e161c;--surface:#152029;--ink:#e4ebef;--muted:#97a7b2;--line:#26353f;--ocean:#7fb8d6;--ocean-soft:#1b3242;--sun:#f0a640;--sun-soft:#3a2a12;--uv:#9d86d6;--vis:#e3b545;--ir:#d9705a;color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--f)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.2 var(--f)}
 a{color:var(--ocean)}
 a:focus-visible,button:focus-visible{outline:2px solid var(--sun);outline-offset:2px;border-radius:3px}
 .bar{background:linear-gradient(90deg,var(--uv) 0%,var(--uv) 4%,var(--vis) 29%,var(--ir) 74%,var(--ir) 100%);border-bottom:1px solid var(--line)}
